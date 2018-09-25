@@ -35,6 +35,8 @@ int main()
     printf("Basic Math functions\n");
     printf("Written by: Levi Butcher\n");
 
+    printf("\nResults Expected should always equal 0, anything else means results were wrong\n");
+
     printf("\nAdding a: %d and b: %d\n", a, b);
     int addResult = add(a, b);
     printf("Expected Result: %d\n", expectedAdd);
