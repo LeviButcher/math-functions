@@ -1,6 +1,8 @@
 # Math-Functions
 Basic math functions in C. Used for a quick demostration of using the Debugger and steps for setting up the debugger in Codeblocks.
 
+Useful Links
+* [How to use the debugger in Codeblocks](https://www.youtube.com/watch?v=h_r5ZfETRZQ)
 
 ## How to clone repo (or just download the zip)
 * Go download and install [Git](https://git-scm.com/downloads)
