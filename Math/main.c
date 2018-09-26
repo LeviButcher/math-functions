@@ -21,16 +21,22 @@ int subtract(int a, int b);
 int multiply(int a, int b);
 int divide(int a, int b);
 int checkResult(int result, int expectedResult);
+void power(int base, int power, int* result);
 
 
 int main()
 {
     int a = 50;
     int b = 40;
+    int powerBase = 12;
+    int toPower = 3;
+    int powerResult = 0;
+    int expectedPowerResult = 1728;
     int expectedAdd = 90;
     int expectedSubtract = 10;
     int expectedMultiply = 2000;
     int expectedDivide = 1;
+
 
     printf("Basic Math functions\n");
     printf("Written by: Levi Butcher\n");
@@ -60,6 +66,13 @@ int main()
     printf("Expected Result: %d\n", expectedDivide);
     printf("Results: %d\n", divideResult);
     printf("Were results expected: %d\n", checkResult(expectedDivide, divideResult));
+
+
+    printf("\nPower: %d to the power of %d\n", powerBase, toPower);
+    power(powerBase, toPower, &powerResult);
+    printf("Expected Result: %d\n", expectedPowerResult);
+    printf("Results: %d\n", powerResult);
+    printf("Were results expected: %d\n", checkResult(expectedPowerResult, powerResult));
 
 
     return 0;
@@ -110,4 +123,19 @@ int divide(int a, int b)
 int checkResult(int result, int expectedResult)
 {
     return result - expectedResult;
+}
+
+/*
+*   Calculates the result of a base number to the power of another number.
+*
+*   Precondition: result has to be a address
+*   Postcondition: result address will point to the result
+*/
+void power(int base, int toPower, int* result)
+{
+    *result = base;
+    for(int i = 0; i < toPower - 1; i++)
+    {
+        *result *= base;
+    }
 }
