@@ -1,9 +1,9 @@
 # Math-Functions
-Basic math functions in C. 
+Basic math functions in C. Used for a quick demostration of using the Debugger and steps for setting up the debugger in Codeblocks.
 
 
-## How to clone repo
-* Go download and install Git
+## How to clone repo (or just download the zip)
+* Go download and install [Git](https://git-scm.com/downloads)
 * Click clone or dowload option on repo main page
 * Click Use HTTPS if not already selected
 * Copy url within box
@@ -11,7 +11,8 @@ Basic math functions in C.
 * Type `cd Desktop`
 * Type `git clone` then paste url that was copied
 
-#### math-function will now exist on your desktop
+**math-function will now exist on your desktop**
+
 
 ## Setting up the debugger
 
@@ -27,6 +28,7 @@ This should of came installed with your version of codeblocks, just have to set 
 
 As long as you have installed the same verion of codeblocks that I have that path should be exactly the same for everyone.
 Now debugging should work
+
 
 ## Running the Debugger
 
@@ -44,11 +46,11 @@ Directly underneath _DoxyBlocks_ is a red play button. This play button is the s
 1. Step Out
     1. Immediately step out of a called function back to the caller
 1. Stop Debugger
-  1. Stops the debugger
+    1. Stops the debugger
 1. Debugging Windows
-  1. Contains a bunch of useful tools to use during debugging
+    1. Contains a bunch of useful tools to use during debugging
   
-There is next instruction and step into instruction but I don't think you will need them. 
+There is **next instruction** and **step into instruction** but I don't think you will need them. 
 
 ### Setting BreakPoints
   breakpoints are specific places in your program that you are telling the debugger you would like to stop at. 
@@ -59,6 +61,8 @@ There is next instruction and step into instruction but I don't think you will n
 #### Remove a BreakPoint
   Just click on the red dot again and it will go away
   
+  
+ 
 # Watches
   This is the most important and useful thing when debugging.
   
